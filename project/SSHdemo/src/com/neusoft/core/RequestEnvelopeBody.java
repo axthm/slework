@@ -2,11 +2,18 @@ package com.neusoft.core;
 
 import java.util.HashMap;
 
+/**
+ * 请求信封，封装请求参数
+ * @author lichen6928
+ *
+ * @param <K>
+ * @param <V>
+ */
 public class RequestEnvelopeBody<K, V> implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
+/**
+ *
+ */
 	private static final long serialVersionUID = -4780998934582316014L;
 	/**
 	 * 存储空间
