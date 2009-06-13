@@ -22,7 +22,7 @@ public class ResponseEnvelopeBody<K,V> implements java.io.Serializable{
 		this.hashMap.put(key, value);
 	}
 	
-	public V get(Object key){
+	public V get(K key){
 		return  this.hashMap.get(key);
 		
 	}
