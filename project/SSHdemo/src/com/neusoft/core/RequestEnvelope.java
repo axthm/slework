@@ -2,6 +2,10 @@ package com.neusoft.core;
 
 public class RequestEnvelope<K, V> implements java.io.Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private RequestEnvelopeHeader requestEnvelopeHeader;
 	private RequestEnvelopeBody<K, V> requestEnvelopeBody;
 	
