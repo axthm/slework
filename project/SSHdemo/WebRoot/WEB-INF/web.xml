@@ -34,7 +34,7 @@
     <description>完成初始化工作</description>
     <display-name>InitServlet</display-name>
     <servlet-name>InitServlet</servlet-name>
-    <servlet-class>com.neusoft.core.InitServlet</servlet-class>
+    <servlet-class>com.neusoft.core.servlet.InitServlet</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
 
