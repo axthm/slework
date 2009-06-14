@@ -96,7 +96,10 @@ function main(){
 						var initval = {id:'',name:'',descn:'',sal:''};
 						var record = new Ext.data.Record(initval);
 						grid.stopEditing();
-						ds.insert(0,record);
+						var sm = grid.getSelectionModel()
+						var cell = sm.getSelectedCell();
+						var record = ds.getAt(cell[0]);
+						ds.remove(record);
 						grid.startEditing(0,0);
 						record.dirty = true;
 						record.modified = initval;
