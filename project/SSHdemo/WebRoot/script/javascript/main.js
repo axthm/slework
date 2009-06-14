@@ -1,3 +1,4 @@
+Ext.onReady(function(){
 var viewport = new Ext.Viewport({
 layout:'border',
 items:[
@@ -11,6 +12,19 @@ items:[
 	width:120,
 	minSize:120,
 	maxSize:200
-}
+},
+{
+	title:'north',
+	region:'north',
+	contentEI:'north-div',
+	split:true,
+	border:true,
+	collapsible:true,
+	height:120,
+	minSize:120,
+	maxSize:200
+},
+main()
 ]
 });
+})
