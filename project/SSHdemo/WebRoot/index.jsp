@@ -22,14 +22,12 @@
 		<script type="text/javascript" src="lib/ext/ext-all.js"></script>
 		<script type="text/javascript" src="lib/ext/ext-lang-zh_CN.js"></script>
 		<script type="text/javascript" src="lib/ext/locale/PagingMemoryProxy.js"></script>
-    	<script type="text/javascript" src="gridLe.js"></script>
+    	<script type="text/javascript" src="script/javascript/center.js"></script>
+    	<script type="text/javascript" src="script/javascript/main.js"></script>
 	</head>
     <body>
-        <h1>ext学习</h1>
-		<div id="grid-example"></div>
-		<div id="test"></div>
-		<div id = "fi-basic-btn"></div>
-        <div id = "button"></div>>
-        <div><a href="tree/TreeLearn.jsp">tree</a></div>
+		<div id="west-div"></div>
+		<div id="center-div"></div>
+		<div id="north-div"></div>
     </body>
 </html>
