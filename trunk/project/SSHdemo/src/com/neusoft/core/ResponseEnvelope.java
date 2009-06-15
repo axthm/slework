@@ -36,6 +36,24 @@ public class ResponseEnvelope<K, V> implements java.io.Serializable {
 	public V getParameter(K key){
 		return this.responseEnvelopeBody.get(key);
 	}
+	public String getMessage() {
+		return responseEnvelopeHeader.getMessage();
+	}
+	public void setMessage(String message) {
+		responseEnvelopeHeader.setMessage(message);
+	}
+	public String getDetalMessage() {
+		return responseEnvelopeHeader.getDetalMessage();
+	}
+	public void setDetalMessage(String detalMessage) {
+		responseEnvelopeHeader.setDetalMessage(detalMessage);
+	}
+	public int getAppCode() {
+		return responseEnvelopeHeader.getAppCode();
+	}
+	public void setAppCode(int appCode) {
+		responseEnvelopeHeader.setAppCode(appCode);
+	}
 
 }
 
