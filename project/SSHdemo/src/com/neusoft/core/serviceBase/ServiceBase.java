@@ -20,4 +20,13 @@ public class ServiceBase {
 		transactionManager.commit(status);
 	}
 
+	public DataSourceTransactionManager getTransactionManager() {
+		return transactionManager;
+	}
+
+	public void setTransactionManager(
+			DataSourceTransactionManager transactionManager) {
+		this.transactionManager = transactionManager;
+	}
+
 }
