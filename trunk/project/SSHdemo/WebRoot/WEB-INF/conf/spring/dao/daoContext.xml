@@ -14,7 +14,7 @@
 		</property>
 	</bean-->
 	
-	<bean id="MenuDAO" class="com.neusoft.hibernate.conf.dao.MenuDAO">
+	<bean id="menuDAO" class="com.neusoft.hibernate.conf.dao.MenuDAO">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>

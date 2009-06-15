@@ -8,13 +8,13 @@
 			<ref bean="transactionManager" />
 		</property>
 	</bean>
-		<bean id="MenuService"
-		class="com.neusoft.spring.services.impl.MenuServicesImpl">
+		<bean id="menuService"
+		class="com.neusoft.spring.services.impl.MenuServiceImpl">
 		<property name="transactionManager">
 			<ref bean="transactionManager" />
 		</property>
-		<property name="menuDao">
-			<ref bean="menuDao" />
+		<property name="menuDAO">
+			<ref bean="menuDAO" />
 		</property>
 	</bean>
 </beans>
