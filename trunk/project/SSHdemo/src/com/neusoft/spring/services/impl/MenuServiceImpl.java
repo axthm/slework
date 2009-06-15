@@ -11,12 +11,12 @@ import com.neusoft.hibernate.conf.dao.MenuDAO;
 
 public class MenuServiceImpl extends ServiceBase implements
 		com.neusoft.spring.services.MenuService {
-	private MenuDAO menuDao;
+	private MenuDAO menuDAO;
 	public ResponseEnvelope loadMenu(RequestEnvelope requestEnvelope) {
 		ResponseEnvelope responseEnvelope = new ResponseEnvelope();
 		try{
 			this.begin();
-			List menus = menuDao.findAll();
+			List menus = menuDAO.findAll();
 			
 			responseEnvelope.setParameter("menu", menus);
 			responseEnvelope.setAppCode(GlobalParam.APP_CODE_SUCCESS);
@@ -30,10 +30,10 @@ public class MenuServiceImpl extends ServiceBase implements
 		return responseEnvelope;
 	}
 	public MenuDAO getMenuDAO() {
-		return menuDao;
+		return menuDAO;
 	}
 	public void setMenuDAO(MenuDAO menuDao) {
-		this.menuDao = menuDao;
+		this.menuDAO = menuDao;
 	}
 
 }
