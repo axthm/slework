@@ -35,10 +35,10 @@
 		</property>
 		<property name="mappingResources">
 			<list>
-				<!-- value>
-					com/neusoft/hibernate/conf/dao/Emp.hbm.xml
-				</value>
 				<value>
+					com/neusoft/hibernate/conf/dao/Menu.hbm.xml
+				</value>
+				<!-- value>
 					com/neusoft/hibernate/conf/dao/Dept.hbm.xml
 				</value-->
 			</list>
