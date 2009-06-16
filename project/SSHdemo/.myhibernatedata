@@ -1,0 +1,23 @@
+#
+#Mon Jun 15 11:48:06 CST 2009
+genBasicCompId=false
+sessionFactoryName=com.neusoft.hibernate.conf.HibernateSessionFactor
+profile=
+daoSFId=
+version=3.2
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+libInstallFolder=WebRoot/WEB-INF/lib
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+reSettingsFile=/SSHdemo/src/hibernate.reveng.xml
+configFile=/SSHdemo/src/hibernate.cfg.xml
+createConfigFile=false
+addLibs2Classpath=false
+baseDaoClass=BaseHibernateDAO
