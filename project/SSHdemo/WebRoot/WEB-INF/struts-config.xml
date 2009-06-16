@@ -5,7 +5,14 @@
   <form-beans />
   <global-exceptions />
   <global-forwards />
-  <action-mappings />
+  <action-mappings >
+    <action
+      parameter="Method"
+      path="/menuAction"
+      type="com.neusoft.struts.action.MenuAction" />
+
+  </action-mappings>
+
   <message-resources parameter="com.yourcompany.struts.ApplicationResources" />
 </struts-config>
 
