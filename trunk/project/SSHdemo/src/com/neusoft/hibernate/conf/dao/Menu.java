@@ -10,13 +10,25 @@ public class Menu implements java.io.Serializable {
 
 	// Fields
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Long id;
 	private String name;
 	private String location;
 	private String module;
 	private String des;
-
+	private String leaf;
 	// Constructors
+
+	public String getLeaf() {
+		return leaf;
+	}
+
+	public void setLeaf(String leaf) {
+		this.leaf = leaf;
+	}
 
 	/** default constructor */
 	public Menu() {
@@ -30,12 +42,13 @@ public class Menu implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Menu(Long id, String name, String location, String module, String des) {
+	public Menu(Long id, String name, String location, String module, String des,String leaf) {
 		this.id = id;
 		this.name = name;
 		this.location = location;
 		this.module = module;
 		this.des = des;
+		this.leaf = leaf;
 	}
 
 	// Property accessors

@@ -22,5 +22,8 @@
         <property name="des" type="java.lang.String">
             <column name="DES" length="200" />
         </property>
+        <property name="leaf" type="java.lang.String">
+            <column name="LEAF" length="2" />
+        </property>
     </class>
 </hibernate-mapping>

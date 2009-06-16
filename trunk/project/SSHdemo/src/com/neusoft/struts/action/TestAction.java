@@ -7,15 +7,11 @@ package com.neusoft.struts.action;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import com.neusoft.core.actionBase.ActionBase;
 import com.neusoft.spring.services.TestService;
 
 /** 
@@ -25,20 +21,8 @@ import com.neusoft.spring.services.TestService;
  * XDoclet definition:
  * @struts.action parameter="Method" validate="true"
  */
-public class TestAction extends DispatchAction {
-	Log log = LogFactory.getLog(this.getClass());
-	protected Object getBean(String beanid){
-		Object result = null; 
-		WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(this.servlet.getServletContext());
-		 result= ctx.getBean(beanid);
-		 if (result==null) {
-			 if(log.isInfoEnabled()){
-				 log.info("没有找到bean");
-			 }
-			 throw new RuntimeException("没有找到bean");
-		 }
-		 return result;
-	}
+public class TestAction extends ActionBase {
+
 	
 	public TestService testService;
 	/*

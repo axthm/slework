@@ -113,7 +113,7 @@ public class MenuDAO extends HibernateDaoSupport {
 	public List findAll() {
 		log.debug("finding all Menu instances");
 		try {
-			String queryString = "from Menu";
+			String queryString = "from Menu order by location";
 			Query queryObject = getSession().createQuery(queryString);
 			return queryObject.list();
 		} catch (RuntimeException re) {
