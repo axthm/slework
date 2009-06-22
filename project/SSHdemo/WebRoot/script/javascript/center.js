@@ -3,7 +3,11 @@
  * and open the template in the editor.
  */
 //Ext.onReady(function(){
-function main(){
+Ext.QuickTips.init();
+
+
+
+var studentManager = function(){
     var tree = new Ext.tree.TreePanel();
 
 	function chfont(value,metadata,record,rowIndex,colIndex){
@@ -112,20 +116,21 @@ function main(){
 			var grid = new Ext.grid.EditorGridPanel(
 				{
 					title:'<span style="font-size:12px>学习</span>',
-					el:'center-div',
-					region:'center',
+					//el:'center-div',
+					//region:'center',
 					split:true,
 					border:true,
 					collapsible:true,
 					store:ds,
 					cm:cm,
-					autoExpandColumn: 'id',
+					autoExpandColumn: 'descn',
 					width:420,
 					height:200,
 					tbar:tb,
 					bbar:paging,
 					footer :true,
-					header:true
+					header:true,
+					 closable : true
 				}
 			);
 			//ds.load();
@@ -144,10 +149,12 @@ function main(){
         }
     });
 	Ext.get('text').on('click',function(){
-		ds.remove(ds.getAt(1));
+		ds.remove(ds.getAt(1 closable : true,));
 		grid.view.refresh();
 	});*/
 	return grid;
 	}
+	
+	var studentManagerView = studentManager()
 //});
 
