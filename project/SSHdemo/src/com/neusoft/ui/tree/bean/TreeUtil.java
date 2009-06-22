@@ -22,6 +22,7 @@ public class TreeUtil {
 		treeNode.setText(menu.getName());
 		treeNode.setQtip(menu.getDes());
 		String loc = menu.getLocation();
+		treeNode.setModel(menu.getModule());
 		if (menu.getLeaf().equals("0")) {
 			treeNode.setLeaf(false);
 		}else{
