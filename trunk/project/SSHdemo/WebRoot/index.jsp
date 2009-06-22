@@ -15,7 +15,7 @@
 		}
 	</style>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>New Web Project</title>
+        <title>学生管理</title>
 		<link rel="stylesheet" type="text/css" href="lib/ext/resources/css/ext-all.css" />
 		<script type="text/javascript" src="lib/ext/adapter/ext/ext-base.js"></script>
 
