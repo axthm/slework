@@ -17,6 +17,7 @@ public class TreeNode {
 	private String qtip;
 	private String qtipCfg;
 	private String text;
+	private String model;
 	
 	private List<TreeNode> children = new ArrayList<TreeNode>(0);
 	
@@ -219,6 +220,14 @@ public class TreeNode {
 
 	public void setChildren(List<TreeNode> children) {
 		this.children = children;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
 	}
 
 }
