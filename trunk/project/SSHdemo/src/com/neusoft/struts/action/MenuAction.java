@@ -43,11 +43,4 @@ public class MenuAction extends ActionBase{
 		response.getWriter().write(jsonArray.toString());
 		return null;
 	}
-	public static void main(String[] args){
-		 List list1 = new ArrayList();  
-		 list1.add( "first" );  
-		 list1.add( "second" );  
-		 JSONArray jsonArray = JSONArray.fromObject( list1 );  
-		 System.out.println(list1);
-	}
 }
