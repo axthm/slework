@@ -28,7 +28,7 @@ public class InitServlet extends HttpServlet {
 	 */
 	public InitServlet() {
 		super();
-		
+
 	}
 
 	/**
