@@ -4,7 +4,7 @@
  */
 Ext.onReady(function(){
     var tree = new Ext.tree.TreePanel();
-
+    var test = new Array();
 	function chfont(value,metadata,record,rowIndex,colIndex){
 	if(colIndex ==2){
 		record.data['descn'] = value + record.data['id'];
