@@ -82,6 +82,7 @@ var studentManager = function(){
 				{
 					text:'添加一行',
 					handler:function(){
+				
 						var initval = {id:'',name:'',descn:'',sal:''};
 						var record = new Ext.data.Record(initval);
 						grid.stopEditing();
